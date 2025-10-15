@@ -1,4 +1,4 @@
-@if(!results){
+@if(!results()){
 <p class="center">Please Enter some values and Press "Calculate".</p>
 } @else {
 <table>
@@ -12,7 +12,7 @@
     </tr>
   </thead>
   <tbody>
-    @for(r of results; track r.year){
+    @for(r of results(); track r.year){
     <tr>
       <td>
         {{ r.year }}
